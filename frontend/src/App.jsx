@@ -1,7 +1,14 @@
-import "./App.css";
+import { Button, Container, Stack } from "@chakra-ui/react";
+import Navbar from "./components/Navbar";
 
 function App() {
-  return <>Hello World</>;
+  return (
+    <Stack minH={"100vh"}>
+      <Navbar />
+      <Container maxH={"1200px"} my={4} />
+      <Container />
+    </Stack>
+  );
 }
 
 export default App;
